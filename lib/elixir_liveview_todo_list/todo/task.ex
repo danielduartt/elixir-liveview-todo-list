@@ -1,4 +1,4 @@
-defmodule ElixirLiveviewTodoList.Task do
+defmodule ElixirLiveviewTodoList.Todo.Task do
   use Ecto.Schema
   import Ecto.Changeset
 
