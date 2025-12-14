@@ -19,7 +19,7 @@ defmodule ElixirLiveviewTodoListWeb.TodoLive do
   end
 
   # 2. RENDER: O HTML da página
-@impl true
+  @impl true
   def render(assigns) do
     ~H"""
     <div class="w-full max-w-lg mx-auto mt-12 p-6 bg-white rounded-lg shadow-md">
@@ -87,8 +87,15 @@ defmodule ElixirLiveviewTodoListWeb.TodoLive do
 
   # 3. HANDLERS: Lógica de Negócio
 
+  # --- ESTA FUNÇÃO ESTAVA FALTANDO ---
   # Atualiza o campo de input enquanto digita
-@impl true
+  @impl true
+  def handle_event("update_form", %{"title" => new_title}, socket) do
+    {:noreply, assign(socket, new_task_title: new_title)}
+  end
+
+  # Atualiza o status de completado (Checkbox)
+  @impl true
   def handle_event("toggle_complete", %{"id" => id, "task" => task_params}, socket) do
     # 1. Busca a tarefa
     task = Repo.get!(Task, id)
