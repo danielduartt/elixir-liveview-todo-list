@@ -65,3 +65,13 @@ config :phoenix, :json_library, Jason
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
 import_config "#{config_env()}.exs"
+
+
+# Configuração dos Repositórios Ecto
+config :elixir_liveview_todo_list,
+  ecto_repos: [ElixirLiveviewTodoList.Repo],
+  generators: [timestamp_type: :utc_datetime]
+
+# Configuração Padrão do Repo (Geral)
+config :elixir_liveview_todo_list, ElixirLiveviewTodoList.Repo,
+  priv: "priv/repo"

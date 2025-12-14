@@ -9,6 +9,7 @@ defmodule ElixirLiveviewTodoList.Application do
   def start(_type, _args) do
     children = [
       ElixirLiveviewTodoListWeb.Telemetry,
+      ElixirLiveviewTodoList.Repo,
       {DNSCluster, query: Application.get_env(:elixir_liveview_todo_list, :dns_cluster_query) || :ignore},
       {Phoenix.PubSub, name: ElixirLiveviewTodoList.PubSub},
       # Start a worker by calling: ElixirLiveviewTodoList.Worker.start_link(arg)

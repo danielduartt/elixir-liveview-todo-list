@@ -81,3 +81,11 @@ config :phoenix_live_view,
 
 # Disable swoosh api client as it is only required for production adapters.
 config :swoosh, :api_client, false
+
+
+# Configure your database
+config :elixir_liveview_todo_list, ElixirLiveviewTodoList.Repo,
+  database: Path.expand("../elixir_liveview_todo_list_dev.db", Path.dirname(__ENV__.file)),
+  pool_size: 5,
+  stacktrace: true,
+  show_sensitive_data_on_connection_error: true
