@@ -10,7 +10,7 @@
 
 Uma aplicação web moderna e reativa para gerenciamento de tarefas, construída com **Elixir**, **Phoenix LiveView** e **SQLite**, utilizando um design profissional com **Tailwind CSS**.
 
-[Sobre](#sobre) • [Tecnologias](#-tecnologias) • [Como Rodar](#-como-rodar) • [Estrutura do Projeto](#-estrutura-do-projeto) • [Funcionalidades](#-funcionalidades) • [Histórico de Commits](#-histórico-de-commits)
+[Sobre](#sobre) • [Tecnologias](#-tecnologias) • [Demonstração](#-demonstração) • [Como Rodar](#-como-rodar) • [Estrutura do Projeto](#-estrutura-do-projeto) • [Funcionalidades](#-funcionalidades) • [Histórico de Commits](#-histórico-de-commits)
 
 </div>
 
@@ -23,6 +23,14 @@ Uma aplicação web moderna e reativa para gerenciamento de tarefas, construída
 Este projeto é uma implementação completa de um aplicativo Todo List desenvolvido como atividade acadêmica. Ele demonstra a construção incremental de uma aplicação web full-stack utilizando **Phoenix LiveView**, um framework revolucionário que permite construir aplicações web reativas e em tempo real sem a necessidade de JavaScript adicional.
 
 O projeto segue a arquitetura proposta no tutorial [Como Criar um App Todo List com Elixir e LiveView do Zero](https://www.notion.so/Como-Criar-um-App-Todo-List-com-Elixir-e-LiveView-do-Zero-2a8cce97509380eba53fc82bbeb08435?pvs=21), passando por várias fases de desenvolvimento: setup inicial, lógica em memória, persistência com Ecto, refinamentos e estilização moderna.
+
+---
+
+## 🎬 Demonstração
+
+Assista a um vídeo demonstrativo da aplicação em funcionamento:
+
+📹 **[Video de Demonstração](./video/)** - Confira o sistema em ação, incluindo a interface moderna, adicionar tarefas, marcar como concluído e deletar tarefas.
 
 ---
 

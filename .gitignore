@@ -35,3 +35,8 @@ elixir_liveview_todo_list-*.tar
 npm-debug.log
 /assets/node_modules/
 
+# Ignore large video files (demonstration videos)
+/video/
+*.mp4
+*.mov
+*.avi
